@@ -161,4 +161,31 @@ int main()
             printf("England Wins The Series\n");
         }
     }
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int T,N,X,P;
+    printf("Enter The No. Of Test Cases\n");
+    scanf("%d",&T);
+    for(int i=0;i<T;i++){
+        printf("Enter The No. Of question, Correct Ans And passing marks\n");
+        scanf("%d %d %d",&N,&X,&P);
+        int total = X*3;
+        int min = (N-X)*1;
+        int tmarks = total - min;
+        // printf("%d\n",total);
+        // printf("%d\n",min);
+        // printf("%d\n",tmarks);
+        if(tmarks >= P)
+        {
+            printf("Pass\n");
+        }
+        else{
+            printf("Fail\n");
+        }
+    }
 }*/
+
