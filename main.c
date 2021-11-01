@@ -52,10 +52,10 @@ int main()
        else {
            printf("Solution\n");
        }
-       
-       
+
+
     }
-    
+
 }
 
 #include <stdio.h>
@@ -75,7 +75,7 @@ int main()
         else{
             printf("Yes\n");
         }
-        
+
     }
 }
 
@@ -96,9 +96,9 @@ int main()
         else{
             printf("No\n");
         }
-        
+
     }
-    
+
 }
 
 #include <stdio.h>
@@ -117,7 +117,7 @@ int main()
         {
             scanf("%d", &arr[j]);
         }
-        
+
         for (int j = 0; j < 5; j++)
         {
 
@@ -187,5 +187,46 @@ int main()
             printf("Fail\n");
         }
     }
+}
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+
+    int T, N, L, X, res;
+    printf("enter the value of t:");
+    scanf("%d", &T);
+    for (int i = 0; i < T; i++)
+    {
+        printf("Enter the value of n,l,x\n");
+        scanf("%d %d %d", &N, &L, &X);
+        if (N - L > L)
+        {
+
+            res = L * X;
+            printf("%d\n", res);
+        }
+        else
+        {
+            int pes = (N - L) * X;
+            printf("%d\n", pes);
+        }
+    }
+
+    return 0;
 }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
