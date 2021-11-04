@@ -216,17 +216,37 @@ int main(int argc, char const *argv[])
     return 0;
 }*/
 
+// Faizal walks 3 steps forward in the 1st second, ending up at 3
+// Faizal walks 1 step backward in the 2nd second, ending up at 2
+// Faizal walks 3 steps forward in the 3rd second, ending up at 5
+// Faizal walks 1 step backward in the 4th second, ending up at 4
+// Faizal walks 3 steps forward in the 5th second, ending up at 7
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+#include <stdio.h>
+int main()
+{
+    int x, T; // 5
+    int move = 0;
+    // printf("Enter the test\n");
+    scanf("%d", &T);
+    for (int i = 0; i < T; i++)
+    {
+        // printf("Enter the seconds\n");
+        scanf("%d", &x); // 5
+        for (int i = 1; i <= x; i++)
+        {
+            if (i % 2 == 0)
+            {
+                move = move - 1;
+                // printf("Faizal Walk 3 steps in the %d second,ending up at %d\n", i, move);
+            }
+            else
+            {
+                move = move + 3;
+                // printf("Faizal Walk 3 steps in the %d second,ending up at %d\n", i, move);
+            }
+        }
+        printf("%d",move);
+    }
+}
