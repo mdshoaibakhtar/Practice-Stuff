@@ -214,7 +214,7 @@ int main(int argc, char const *argv[])
     }
 
     return 0;
-}*/
+}
 
 // Faizal walks 3 steps forward in the 1st second, ending up at 3
 // Faizal walks 1 step backward in the 2nd second, ending up at 2
@@ -232,6 +232,7 @@ int main()
     scanf("%d", &T);
     for (int i = 0; i < T; i++)
     {
+        int move = 0;
         // printf("Enter the seconds\n");
         scanf("%d", &x); // 5
         for (int i = 1; i <= x; i++)
@@ -249,4 +250,44 @@ int main()
         }
         printf("%d",move);
     }
-}
+}*/
+// Initially, the price of petrol is 2 rupee and the price of diesel is 2 rupee. Since A=1 and B=1, the price of petrol increases by 1 rupee and the price of diesel increases by 1 rupee at the start of every month. It follows that at the start of the first month, the price of petrol becomes 2+1=3 rupees and the price of diesel becomes 2+1=3 rupees. And by the start of the second month, the price of petrol becomes 3+1=4 rupees and the price of diesel becomes 3+1=4 rupees. By the end of the second month, the prices of petrol and diesel are both 4 rupees and hence both have the same prices.
+// 3
+// 1 1 1 1 1
+// 2 1 2 1 2
+// 2 2 1 1 2
+// SAME PRICE
+// DIESEL
+// SAME PRICE
+/*
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int X, Y, A, B, K, T;
+    scanf("%d", &T);
+    for (int i = 0; i < T; i++)
+    {
+
+        scanf("%d %d %d %d %d", &X, &Y, &A, &B, &K);
+        for (int i = 1; i <= K; i++)
+        {
+            X += A;
+            Y += B;
+        }
+        printf("%d\n", X);
+        printf("%d\n", Y);
+        if (X < Y)
+        {
+            printf("PETROL\n");
+        }
+        else if(X>Y)
+        {
+            printf("DIESEL\n");
+        }
+        else{
+            printf("SAME PRICE\n");
+        }
+    }
+    return 0;
+}*/
+
